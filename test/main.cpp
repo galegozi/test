@@ -1,15 +1,10 @@
-//
-//  main.cpp
-//  test
-//
-//  Created by Gal Egozi 1 on 9/2/16.
-//  Copyright © 2016 Gal Egozi. All rights reserved.
-//
-
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+int main()
+{
+    int *p = new int;
+    p[0] = 5;
+    p[999999+1] = 3;
+    cout << p[999999+1] << endl;
 }
